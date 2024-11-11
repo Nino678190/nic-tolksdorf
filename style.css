@@ -9,6 +9,11 @@ body{
     color: var(--main-text-color);
 }
 
+.icon{
+    height: 40px;
+    width: 40px;
+}
+
 .form-container {
     width: 400px;
     border: 2px solid transparent;
