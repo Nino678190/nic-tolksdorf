@@ -17,7 +17,7 @@ function contact_me(event){
     const mail = document.getElementById("email").value;
     const message = document.getElementById("message").value;
     if (name && mail && message){
-        fetch('http://localhost:13000/api/captcha', {
+        fetch('url', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
