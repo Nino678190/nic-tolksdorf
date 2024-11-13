@@ -3,6 +3,12 @@
     --main-text-color: #aaaaaa;
     --main-card-bg-color: #ff2109;
     --main-link-color: lightblue;
+    --main-card-background: #212121;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(fonts/static/OpenSans-SemiBold.ttf)
 }
 
 body{
@@ -334,4 +340,16 @@ button:after{
     100%{
         background-position: 0 0;
     }
+}
+
+.karten{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.techtag{
+    background-color: var(--main-background);
 }
