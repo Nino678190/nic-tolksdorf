@@ -1,9 +1,10 @@
 :root{
     --main-background: #212121;
     --main-text-color: #aaaaaa;
-    --main-card-bg-color: #ff2109;
+    --main-card-bg-color: #ff2109; /*TODO anpassen*/
+    --main-border-color: #414141; /*TODO anpassen*/
     --main-link-color: lightblue;
-    --main-card-background: #212121;
+    --main-card-background: #212121; /*TODO anpassen*/
 }
 
 @font-face {
@@ -21,7 +22,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 16px 32px;
-    margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -347,4 +347,5 @@ button:after{
 
 .techtag{
     background-color: var(--main-background);
+    border: 1px solid var(--main-border-color);
 }
