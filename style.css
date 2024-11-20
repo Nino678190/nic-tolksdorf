@@ -350,8 +350,13 @@ button:after{
     border-radius: var(--main-border-radius);
     background-color: var(--main-card-background);
     box-shadow: var(--main-box-shadow);
+    border: var(--main-border-color);
     flex-direction: column;
     width: 30%;
+}
+
+.projectcard>a{
+    margin: var(--main-margin-xs) 0;
 }
 
 .tags{
@@ -381,7 +386,8 @@ button:after{
     display: flex;
     flex-wrap: wrap;
     gap: 45px;
-    justify-content: center;
+    justify-content: flex-start;
+    margin: 0 var(--main-margin-xs);
 }
 
 .title{
