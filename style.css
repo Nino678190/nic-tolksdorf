@@ -7,7 +7,7 @@
     --main-card-background: #212121; /*TODO anpassen*/
     --main-border-radius: 5px;
     --big-border-radius: 20px;
-    --main-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --main-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     --main-transition: 0.3s;
     --main-margin-xxs: 4px;
     --main-margin-xs: 8px;
@@ -285,9 +285,13 @@ button:after{
     /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055); */
 }
 
+.contact>h2{
+    margin: var(--main-margin-l);
+}
+
 .socialContainer {
-    width: 40px;
-    height: 50px;
+    width: 80px;
+    height: 100px;
     background-color: rgb(44, 44, 44);
     display: flex;
     align-items: center;
@@ -323,17 +327,17 @@ button:after{
 }
 
 .socialSvg {
-    width: 17px;
+    width: 34px;
 }
-  
+
 .socialSvg path {
     fill: rgb(255, 255, 255);
 }
-  
+
 .socialContainer:hover .socialSvg {
     animation: slide-in-top 1.2s both;
 }
-  
+
 @keyframes slide-in-top {
     0% {
         transform: translateY(-50px);
@@ -344,7 +348,15 @@ button:after{
         opacity: 1;
     }
 }
-  
+
+.karten {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 5%; */
+    justify-content: flex-start;
+    margin: 0 var(--main-margin-s);
+}
+
 .projectcard{
     display: flex;
     border-radius: var(--main-border-radius);
@@ -352,7 +364,9 @@ button:after{
     box-shadow: var(--main-box-shadow);
     border: var(--main-border-color);
     flex-direction: column;
-    width: 30%;
+    width: fit-content;
+    max-width: 30%;
+    margin: var(--main-margin-l) var(--main-margin-m);
 }
 
 .projectcard>a{
@@ -360,7 +374,7 @@ button:after{
 }
 
 .projectcard>h4{
-    font-size: larger;
+    font-size: 1.4em;
 }
 
 .tags{
@@ -386,14 +400,6 @@ button:after{
     border: 1px solid var(--main-border-color);
 }
 
-.karten{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 45px;
-    justify-content: flex-start;
-    margin: 0 var(--main-margin-xs);
-}
-
 .title{
     display: flex;
     justify-content: center;
@@ -405,8 +411,8 @@ button:after{
     margin: var(--main-margin-m) 0;
 }
 
-.socials>a>img{
+.imgsocials>img{
     height: 5%;
-    width: 17%;
+    width: 15%;
     aspect-ratio: 16/9;
 }
