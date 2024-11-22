@@ -1,6 +1,6 @@
 :root{
     --main-background: #212121;
-    --main-text-color: #aaaaaa;
+    --main-text-color: #FFFAFA;
     --main-card-bg-color: #ff2109; /*TODO anpassen*/
     --main-border-color: #414141; /*TODO anpassen*/
     --main-link-color: lightblue;
@@ -359,6 +359,10 @@ button:after{
     margin: var(--main-margin-xs) 0;
 }
 
+.projectcard>h4{
+    font-size: larger;
+}
+
 .tags{
     width: 100%;
     display: flex;
@@ -394,4 +398,15 @@ button:after{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.socials{
+    margin: var(--main-margin-m) 0;
+}
+
+.socials>a>img{
+    height: 5%;
+    width: 17%;
+    aspect-ratio: 16/9;
 }
