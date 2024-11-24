@@ -33,7 +33,7 @@
                 <section class="intro">
                     <h1>Nic Tolksdorf</h1>
                     <h3>Junior Webdeveloper</h3>
-                    <button onclick="window.location.replace('kontakt.html')">
+                    <button id="button">
                         Contact me
                     </button>
                 </section>
@@ -65,5 +65,44 @@
 		<footer>
             <!-- Vectors and icons by <a href="https://www.svgrepo.com" target="_blank">SVG Repo</a> -->
         </footer>
+        <dialog id="contact">
+            <div class="card">
+                <a class="socialContainer containerOne" href="https://instagram.com/nino.coding" target="_blank">
+                    <img src="images/instagram-1-svgrepo-com.svg" alt="Instagram" class="socialSvg">
+                </a>
+                <a class="socialContainer containerTwo" href="https://wa.me/<number>" target="_blank"> <!--TODO: Anpassen-->
+                    <img src="images/WhatsApp.svg" alt="WhatsApp" class="socialSvg">
+                </a>
+                <a class="socialContainer containerThree" href="https://matrix.to/#/@Nic:alpaka.social" target="_blank">
+                    <img src="images/element-desktop-logo.svg" alt="Matrix" class="socialSvg">
+                </a>
+                <a class="socialContainer containerFour" href="mailto:" target="_blank"> <!--TODO Anpassen-->
+                    <img src="images/mail-open-alt-svgrepo-com.svg" alt="Mail" class="socialSvg">
+                </a>
+            </div>
+        </dialog>
+        <script>
+            const dialog = document.querySelector('dialog');
+            const button = document.getElementById('button');
+            const body = document.querySelector('body');
+
+            button.addEventListener('click', () => {
+                dialog.showModal();
+                body.style.filter = 'blur(15px)';
+            });
+            if(dialog.display === 'close'){
+                body.style.filter = 'none';
+            }
+            document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        dialog.close();
+                        body.style.filter = 'none';
+                    }
+                });
+            dialog.addEventListener('click', () => {
+                dialog.close();
+                body.style.filter = 'none';
+            });
+        </script>
 	</body>
 </html>	 

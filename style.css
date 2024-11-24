@@ -53,6 +53,13 @@ h3{
     font-size: 1.25em;
 }
 
+dialog{
+    background-color: var(--main-background);
+    border: 1px solid var(--main-border-color);
+    border-radius: var(--main-border-radius);
+    box-shadow: var(--main-box-shadow);
+}
+
 header>nav{
     display: flex;
     gap: 20px;
