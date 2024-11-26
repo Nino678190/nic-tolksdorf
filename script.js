@@ -45,8 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
 function fitHeight() {
     let header = document.querySelector('header');
     let me = document.getElementById('me');
