@@ -26,6 +26,9 @@
 body{
     background-color: var(--main-background);
     color: var(--main-text-color);
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -452,6 +455,10 @@ button:after{
     width: 15px;
 }
 
+.pause{
+    border: 1px solid red;
+}
+
 .pause:hover{
     transform: scale(1.05);
     transition: all 1s ease;
@@ -459,11 +466,19 @@ button:after{
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
+.inarbeit{
+    border: 1px solid yellow;
+}
+
 .inarbeit:hover{
     transform: scale(1.05);
     transition: all 1s ease;
     border: 2px solid yellow;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fertig{
+    border: 1px solid green;
 }
 
 .fertig:hover{
@@ -488,4 +503,91 @@ button:after{
     height: 5%;
     width: 15%;
     aspect-ratio: 16/9;
+}
+
+.about_me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--main-margin-m);
+    margin: 0 var(--main-margin-l);
+}
+
+
+/*Large Desktop, TV, etc.*/
+@media screen and (min-width: 1200px){ 
+
+}
+
+/*Tablet landscape, laptop, Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+ 
+}
+
+/*Tablet portrait*/
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .intro{
+        width: 30%;
+    }
+    .section1{
+        justify-content: flex-start;
+    } 
+    
+}
+
+/*mobile landscape*/
+@media screen and (min-width: 480px) and (max-width: 766px){
+    .intro{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1{
+        flex-direction: column;
+        gap: 80px;
+    }
+    .spin{
+        height: 200px;
+    }
+    .orbit{
+        width: 250px;
+        height: 250px;
+    }
+    #image_me{
+        width: 100px;
+        height: 100px;
+    }
+    .socialContainer {
+        width: 60px;
+        height: 80px;   
+    }
+}
+
+/*mobile portrait*/
+@media screen and (max-width: 479px){
+    .intro{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .spin{
+        height: 200px;
+    }
+    .orbit{
+        width: 250px;
+        height: 250px;
+    }
+    #image_me{
+        width: 100px;
+        height: 100px;
+    }
+    .socialContainer {
+        width: 60px;
+        height: 80px;   
+    }
 }
