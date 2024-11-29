@@ -94,11 +94,11 @@
                 body.style.filter = 'none';
             }
             document.addEventListener('keydown', (event) => {
-                    if (event.key === 'Escape') {
-                        dialog.close();
-                        body.style.filter = 'none';
-                    }
-                });
+                if (event.key === 'Escape') {
+                    dialog.close();
+                    body.style.filter = 'none';
+                }
+            });
             dialog.addEventListener('click', () => {
                 dialog.close();
                 body.style.filter = 'none';
