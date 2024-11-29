@@ -1,13 +1,13 @@
 :root{
     --main-background: #212121;
     --main-text-color: #FFFAFA;
-    --main-card-bg-color: #ff2109; /*TODO anpassen*/
     --main-border-color: #414141; /*TODO anpassen*/
     --main-link-color: lightblue;
     --main-card-background: #212121; /*TODO anpassen*/
     --main-border-radius: 5px;
-    --big-border-radius: 20px;
+    --main-border-radius-big: 20px;
     --main-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    --main-box-shadow-big: 0 6px 8px rgba(0, 0, 0, 0.3);
     --main-transition: 0.3s;
     --main-margin-xxs: 4px;
     --main-margin-xs: 8px;
@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: "OpenSans";
-    src: url(fonts/static/OpenSans-SemiBold.ttf)
+    src: url(fonts/static/OpenSans-SemiBold.ttf);
 }
 
 body{
@@ -33,7 +33,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 16px 32px;
-    box-shadow: var(--main-box-shadow);
+    box-shadow: var(--main-box-shadow-big);
 }
 
 a{
@@ -87,7 +87,7 @@ header>nav>a:hover{
     flex-grow: 1;
     justify-content: space-between;
     align-items: center;
-    height: 95vh;
+    height: 90vh;
 }
 
 .intro{
@@ -378,7 +378,8 @@ button:after{
     border: var(--main-border-color);
     flex-direction: column;
     width: fit-content;
-    max-width: 30%;
+    max-width: 28%;
+    padding: var(--main-margin-xs);
     margin: var(--main-margin-l) var(--main-margin-m);
 }
 
@@ -410,7 +411,66 @@ button:after{
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-bottom: var(--main-margin-xs);
+    border-radius: var(--main-border-radius-big);
     border: 1px solid var(--main-border-color);
+}
+
+.legende{
+    margin-left: var(--main-margin-l);
+    display: flex;
+    flex-direction: row;
+    gap: var(--main-margin-s);
+    justify-content: center;
+    align-items: center;
+}
+
+.legende>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.legende1{
+    background-color: red;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+.legende2{
+    background-color: yellow;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+.legende3{
+    background-color: green;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+.pause:hover{
+    transform: scale(1.05);
+    transition: all 1s ease;
+    border: 2px solid red;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.inarbeit:hover{
+    transform: scale(1.05);
+    transition: all 1s ease;
+    border: 2px solid yellow;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fertig:hover{
+    transform: scale(1.05);
+    transition: all 1s ease;
+    border: 2px solid green;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 .title{
