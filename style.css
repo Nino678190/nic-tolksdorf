@@ -71,7 +71,7 @@ header>nav{
 header>nav>a:hover{
     background-image: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     animation: glowing 20s linear infinite;
-    transition: opacity .5s ease-in-out;
+    transition: opacity 1s ease-out;
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -506,12 +506,14 @@ button:after{
 }
 
 .about_me{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: var(--main-margin-m);
     margin: 0 var(--main-margin-l);
+}
+
+.textcontact{
+    text-decoration: underline;
+    color: var(--main-link-color);
+    cursor: pointer;
 }
 
 

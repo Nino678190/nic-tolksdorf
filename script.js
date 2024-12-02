@@ -44,15 +44,3 @@ document.addEventListener('DOMContentLoaded', function() {
         body.style.filter = 'none';
     });
 });
-
-function fitHeight() {
-    let header = document.querySelector('header');
-    let me = document.getElementById('me');
-    let height = window.innerHeight;
-    let heightHead = header.offsetHeight;
-    let orbit = document.getElementById('orbit');
-    let orbitHeight = orbit.offsetHeight;
-    let newHeight = height - heightHead - 50 + 'px';
-    orbitHeight.style.height = newHeight/100*80 + 'px';
-    me.style.height = newHeight;
-}
