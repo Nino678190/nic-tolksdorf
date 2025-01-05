@@ -63,6 +63,11 @@ dialog{
     box-shadow: var(--main-box-shadow);
 }
 
+.dialogFoto{
+    aspect-ratio: 16/9;
+    height: 80vh;
+}
+
 header>nav{
     display: flex;
     gap: 20px;

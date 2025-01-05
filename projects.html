@@ -73,8 +73,7 @@
                 </article>
                 <article class="projectcard inarbeit">
                     <h4>Stellplatzfinder</h4>
-                    <p>Diese Seite ist eine Möglichkeit Stellplätze für den Camper im Urlaub zu finden. Es ist die einzige Seite, welche Open Source ist und alle Daten in regelmäßigen Abschnitten öffentlich zugänglich macht. Über Spenden freut man sich immer.</p>
-                    <a href="https://github.com/nino678190/Stellplatzfinder-pages">Link zum Repository</a>
+                    <p>Diese Seite ist eine Möglichkeit Stellplätze für den Camper im Urlaub zu finden. Es ist die einzige Seite, welche bald Open Source ist und alle Daten in regelmäßigen Abschnitten öffentlich zugänglich macht. Über Spenden freut man sich immer.</p>
                     <article class="tags">
                         <span class="techtag">HTMl</span>
                         <span class="techtag">CSS</span>
@@ -82,8 +81,22 @@
                         <span class="techtag">NodeJS</span>
                     </article>
                 </article>
+                <article class="projectcard fertig">
+                    <h4>VBB und Wetter</h4>
+                    <p>Eine kleine Seite die ich mit der VBB API und der Open-Meteo API erstellt habe. Es zeigt die Abfahrten um einen herum an und das Wetter jetzt und in der nächsten Stunden.</p>
+                    <a onclick="document.getElementById('vbb').showModal()">Bild vom Projekt</a>
+                    <article class="tags">
+                        <span class="techtag">HTML</span>
+                        <span class="techtag">CSS</span>
+                        <span class="techtag">JS</span>
+                        <span class="techtag">JSON & XML</span>
+                </article>
             </section>
         </main>
 		<footer> </footer>
+        <dialog id="vbb">
+            <img src="images/image.png" alt="VBB und Wetter" class="dialogFoto"><br>
+            <button onclick="document.getElementById('vbb').close()">Schließen</button>
+        </dialog>
 	</body>
 </html>	
