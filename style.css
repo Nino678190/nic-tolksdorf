@@ -412,6 +412,7 @@ button:after{
 }
 
 .techtag{
+    min-width: 100px;
     width: fit-content;
     height: fit-content;
     display: flex;
