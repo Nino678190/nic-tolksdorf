@@ -44,6 +44,12 @@ a{
     text-decoration: none;
 }
 
+.buttonNone:hover{
+    background-color: transparent;
+    transition: none;
+    animation: none;
+}
+
 h1{
     font-size: 1.75em;
 }
