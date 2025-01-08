@@ -3,16 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     dialog.id = 'contact';
     dialog.innerHTML = `
         <div class="card">
-            <a class="socialContainer containerOne" href="https://instagram.com/nino.coding" target="_blank">
-                <img src="images/instagram-1-svgrepo-com.svg" class="socialSvg">
-            </a>
-            <a class="socialContainer containerTwo" href="https://wa.me/<number>" target="_blank"> <!--TODO: Anpassen-->
+            <a class="socialContainer containerTwo deactivate" onclick="document.getElementById('contact').close()" target="_blank"> <!--TODO: Anpassen-->
                 <img src="images/WhatsApp.svg" alt="WhatsApp" class="socialSvg">
             </a>
             <a class="socialContainer containerThree" href="https://matrix.to/#/@Nic:alpaka.social" target="_blank">
                 <img src="images/element-desktop-logo.svg" alt="Matrix" class="socialSvg">
             </a>
-            <a class="socialContainer containerFour" href="#" target="_blank"> <!--TODO Anpassen-->
+            <a class="socialContainer containerFour deactivate" onclick="document.getElementById('contact').close()" target="_blank">
                 <img src="images/mail-open-alt-svgrepo-com.svg" alt="Mail" class="socialSvg">
             </a>
         </div>

@@ -523,6 +523,25 @@ button:after{
     cursor: pointer;
 }
 
+.deactivate{
+    cursor: not-allowed;
+    background-color: gray;
+}
+
+.deactivate:hover{
+    background-color: gray;
+    transition: none;
+    animation: none;
+}
+
+.deactivate:hover .socialSvg{
+    background-color: gray;
+    transition: none;
+    animation: none;
+}
+
+
+
 
 /*Large Desktop, TV, etc.*/
 @media screen and (min-width: 1200px){ 
