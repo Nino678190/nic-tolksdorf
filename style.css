@@ -514,6 +514,7 @@ button:after{
 .about_me{
     gap: var(--main-margin-m);
     margin: 0 var(--main-margin-l);
+    margin-bottom: 60px;
 }
 
 .textcontact{
@@ -570,6 +571,10 @@ button:after{
         width: 60px;
         height: 80px;   
     }
+    .projectcard{
+        width: 50%;
+        min-width: 250px;
+    }
 }
 
 /*mobile portrait*/
@@ -597,5 +602,9 @@ button:after{
     .socialContainer {
         width: 60px;
         height: 80px;   
+    }
+    .projectcard{
+        width: 100% !important;
+        max-width: none;
     }
 }
