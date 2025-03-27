@@ -1,9 +1,9 @@
 :root{
     --main-background: #212121;
     --main-text-color: #FFFAFA;
-    --main-border-color: #414141; /*TODO anpassen*/
+    --main-border-color: #414141;
     --main-link-color: lightblue;
-    --main-card-background: #212121; /*TODO anpassen*/
+    --main-card-background: #212121;
     --main-border-radius: 5px;
     --main-border-radius-big: 20px;
     --main-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -19,8 +19,8 @@
 }
 
 @font-face {
-    font-family: "OpenSans";
-    src: url(fonts/static/OpenSans-SemiBold.ttf);
+    font-family: "NotoSans";
+    src: url(fonts/NotoSans-Bold.ttf);
 }
 
 body{
