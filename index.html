@@ -37,8 +37,8 @@
                 <section class="intro">
                     <h1>Nic Tolksdorf</h1>
                     <h3>Junior Webdeveloper</h3>
-                    <button>
-                        <a href="https://matrix.to/#/@Nic:alpaka.social" target="_blank" class="buttonNone">Jetzt kontaktieren</a>
+                    <button onclick="contactMe()">
+                        Jetzt kontaktieren
                     </button>
                 </section>
                 <aside class="spin" id="me">
@@ -62,6 +62,11 @@
         </main>
         <footer>
         </footer>
+        <script>
+            function contactMe() {
+                window.open("https://matrix.to/#/@Nic:alpaka.social", "_blank");
+            }
+        </script>
     </body>
 
 </html>
