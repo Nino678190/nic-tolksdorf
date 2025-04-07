@@ -43,6 +43,7 @@ header{
 a{
     color: var(--main-link-color);
     text-decoration: none;
+    width: fit-content;
 }
 
 a:hover{
