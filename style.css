@@ -20,6 +20,11 @@
     accent-color: var(--accent-color);
 }
 
+::selection {
+    background-color: darkblue;
+    color: var(--main-text-color);
+}
+
 @font-face {
     font-family: "NotoSans";
     src: url(fonts/Noto-Sans/NotoSans-Medium.ttf);
