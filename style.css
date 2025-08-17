@@ -1,6 +1,7 @@
 :root{
     --main-background: #212121;
     --main-text-color: #FFFAFA;
+    --accent-color: #00f0c0;
     --main-border-color: #414141;
     --main-link-color: lightblue;
     --main-card-background: #212121;
@@ -20,7 +21,7 @@
 
 @font-face {
     font-family: "NotoSans";
-    src: url(fonts/NotoSans-Bold.ttf);
+    src: url(fonts/Noto-Sans/NotoSans-Medium.ttf);
 }
 
 body{
@@ -548,10 +549,27 @@ button:after, .button:after{
     aspect-ratio: 16/9;
 }
 
+.about_me_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
 .about_me{
-    gap: var(--main-margin-m);
-    margin: 0 var(--main-margin-l);
     margin-bottom: 60px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight{
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.principles>li{
+    margin-bottom: var(--main-margin-s);
 }
 
 .textcontact{
