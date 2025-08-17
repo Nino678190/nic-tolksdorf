@@ -102,6 +102,16 @@ header>nav{
     font-weight: 600;
 } */
 
+pre{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    border-radius: var(--main-border-radius);
+    font-size: large;
+    font-family: monospace;
+}
+
 .logo{
     aspect-ratio: 1/1;
     height: 50px;
@@ -245,7 +255,7 @@ textarea{
     font-weight: lighter;
 }
 
-button{
+button, .button{
     width: 220px;
     height: 50px;
     border: none;
@@ -260,7 +270,16 @@ button{
     font-size: larger;
 }
 
-button:before{
+.button{
+    width: 100%;
+    padding: 10px;
+}
+
+.button:hover{
+    color: var(--main-text-color) !important;
+}
+
+button:before, .button:before{
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -277,19 +296,19 @@ button:before{
     border-radius: 10px;
 }
 
-button:active{
+button:active, .button:active{
     color: #000
 }
 
-button:active:after{
+button:active:after, .button:active:after{
     background: transparent;
 }
 
-button:hover:before{
+button:hover:before, .button:hover:before{
     opacity: 1;
 }
 
-button:after{
+button:after, .button:after{
     z-index: -1;
     content: '';
     position: absolute;
@@ -558,7 +577,85 @@ button:after{
     animation: none;
 }
 
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--main-margin-m);
+    flex: 1;
+    flex-wrap: wrap;
+}
 
+/* .contact>section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: fit-content;
+    height: fit-content;
+}
+
+.contact>section>a{
+    width: fit-content !important;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--main-margin-m);
+    margin: 0 var(--main-margin-l);
+} */
+
+.contactcard{
+    max-width: none;
+}
+
+.email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: var(--main-margin-s);
+    flex-wrap: wrap;
+}
+
+.email>a, .contact>section>a{
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid var(--main-border-color);
+    color: var(--main-link-color);
+}
+
+.secondary:hover {
+    border-color: var(--main-link-color);
+}
+
+.secondary:before {
+    display: none;
+}
+
+.secondary:after {
+    background: transparent;
+}
+
+.none{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.none:visited{
+    text-decoration: none !important;
+    color: inherit;
+}
 
 
 /*Large Desktop, TV, etc.*/
@@ -579,7 +676,10 @@ button:after{
     .section1{
         justify-content: flex-start;
     } 
-    
+    .contactcard{
+        width: 100%;
+        max-width: 500px;
+    }
 }
 
 /*mobile landscape*/
@@ -643,5 +743,16 @@ button:after{
     .projectcard{
         width: 100% !important;
         max-width: none;
+    }
+    header{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header>nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
