@@ -429,8 +429,7 @@ button:after, .button:after{
 .karten {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 5%; */
-    justify-content: flex-start;
+    justify-content: center;
     margin: 0 var(--main-margin-s);
 }
 
